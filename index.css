@@ -58,6 +58,29 @@
     grid-area: pcard3;
 }
 
+#sp-map{
+    background-image: url('./assets/saopaulo.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#demo-cidade{
+    background-color: #1CFF46;
+}
+
+.slider {
+  width: 100%;
+  max-width: 300px;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
 @media screen and (max-width: 768px){
     #problema-grid{
         display: flex;
