@@ -38,7 +38,7 @@
 
 #problema-grid{
     display: grid;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 100px 0.9fr;
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: 
     ". ptitle ."
