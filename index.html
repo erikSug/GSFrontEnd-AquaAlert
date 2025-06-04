@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaAlert</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Burger</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white">
+
+  <!-- Header -->
+  <header class="p-6 px-6 flex justify-between items-center shadow-md">
+    <img src="./assets/Logo.png" alt="Logo" class="w-[124px] h-[52px]">
+    <button id="menu-btn" class="text-3xl font-bold md:hidden">☰</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="menu" class="hidden flex justify-center bg-gray-100 px-6 py-4 gap-5">
+    <a href="#" class="py-2 md:py-0 hover:underline">Problema</a>
+    <a href="#" class="py-2 md:py-0 hover:underline">Solução</a>
+    <a href="#" class="py-2 md:py-0 hover:underline">Demonstração</a>
+  </nav>
+
+  <!-- Script para toggle -->
+  <script src="./script.js"></script>
 
 </body>
 </html>
