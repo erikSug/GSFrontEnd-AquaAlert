@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu Burger</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Burger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- Header Mobile -->
-  <header class="p-6 px-6 flex justify-between items-center shadow-md md:hidden">
+  <header class="p-6 flex justify-between items-center shadow-md md:hidden">
     <img src="./assets/Logo.png" alt="Logo" class="w-[124px] h-[52px]">
-    <button id="menu-btn" class="text-3xl font-bold md:hidden">☰</button>
+    <button id="menu-btn" class="text-3xl font-bold hover:text-[#296FD8] md:hidden">☰</button>
   </header>
-
   <nav id="menu" class="hidden flex justify-center bg-gray-100 px-6 py-4 gap-5 md:hidden">
-    <a href="#" class="py-2 md:py-0 hover:underline">Problema</a>
-    <a href="#" class="py-2 md:py-0 hover:underline">Solução</a>
-    <a href="#" class="py-2 md:py-0 hover:underline">Demonstração</a>
+    <a href="#" class="py-2 md:py-0 underline">Problema</a>
+    <a href="#" class="py-2 md:py-0 underline">Solução</a>
+    <a href="#" class="py-2 md:py-0 underline">Demonstração</a>
   </nav>
   <!-- //// -->
 
-  <!-- Banner -->
-  <section class="">
+   <!-- Header Desktop -->
+  <header class="hidden p-6 justify-around items-center shadow-md md:flex">
+    <img src="./assets/Logo.png" alt="Logo" class="w-[174px] h-[72px]">
+    <nav class="flex justify-around px-6 py-4 gap-5 w-[500px]">
+        <a href="#" class="py-2 text-[24px] underline poppins">Problema</a>
+        <a href="#" class="py-2 text-[24px] underline poppins">Solução</a>
+        <a href="#" class="py-2 text-[24px] underline poppins">Demonstração</a>
+    </nav>
+  </header>
+  <!-- //// -->
 
+  <!-- Banner -->
+  <section id="banner" class="h-[760px] p-[40px] lg:p-[182px]">
+    <div>
+        <p class="text-[30px] max-w-[313px] poppins">Segurança contra enchentes começa com <span class="text-[#296FD8]">informação</span>.</p>
+        <button  class="bg-[#18BAF5] text-white h-[30px] w-[95px] my-2 rounded-[5px] text-[16px] poppins transition ease-in-out duration-300 hover:bg-[#236D88]">Ver vídeo</button>
+    </div>
   </section>
   <!-- //// -->
+
+  <!-- Problemas (Grid no desktop | Flex no mobile) -->
+  <section class="h-[720px]">
+    <h2 class="text-[32px] oswald">Problemas encontrados</h2>
+    <!-- Card -->
+    <div class="w-[223px] h-[304px] px-[13px] py-[22px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
+        <div class="w-[102px] h-[102px] bg-[#296FD8] rounded-[10px] p-2">
+          <img src="./assets/flooding-house.svg" alt="">
+        </div>
+        <h3 class="oswald text-[16px] font-bold">2.3 Milhões Afetados</h3>
+        <p class="text-[12px] w-[142px] h-[80px] poppins">As enchentes no Rio Grande do Sul expuseram a vulnerabilidade nacional diante de desastres climáticos."</p>
+    </div>
+
+    <div class="w-[223px] h-[304px] px-[13px] py-[22px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
+        <div class="w-[102px] h-[102px] bg-[#296FD8] rounded-[10px] p-2">
+          <img src="./assets/wifi.svg" alt="">
+        </div>
+        <h3 class="oswald text-[16px] font-bold">Sistemas Desconectados</h3>
+        <p class="text-[12px] w-[142px] h-[80px] poppins">Brasil carece de sistemas integrados que conectem previsão, alerta e evacuação em uma resposta coordenada.</p>
+    </div>
+
+    <div class="w-[223px] h-[304px] px-[13px] py-[22px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
+        <div class="w-[102px] h-[102px] bg-[#296FD8] rounded-[10px] p-2">
+          <img src="./assets/storm.svg" alt="">
+        </div>
+        <h3 class="oswald text-[16px] font-bold">Municípios Desprotegidos</h3>
+        <p class="text-[12px] w-[142px] h-[80px] poppins">Maioria dos municípios brasileiros opera sem sistemas automatizados de defesa civil.</p>
+    </div>
+    <!-- //// -->
+  </section>
+  <!-- //// -->
+
+
+
+
 
   <footer>
     <div class="bg-[#296FD8] flex flex-col justify-center items-center p-[10px] h-[125px] md:flex-row md:gap-20 md:h-[72px]">
@@ -50,7 +98,7 @@
         </div>
     </div>
   </footer>
-  <script src="./script.js"></script>
 
+  <script src="./script.js"></script>
 </body>
 </html>
