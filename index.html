@@ -10,16 +10,28 @@
 </head>
 <body>
     <!-- Header Mobile -->
-  <header class="p-6 px-6 flex justify-between items-center shadow-md md:hidden">
+  <header class="p-6 flex justify-between items-center shadow-md md:hidden">
     <img src="./assets/Logo.png" alt="Logo" class="w-[124px] h-[52px]">
-    <button id="menu-btn" class="text-3xl font-bold md:hidden">☰</button>
+    <button id="menu-btn" class="text-3xl font-bold hover:text-[#296FD8] md:hidden">☰</button>
   </header>
 
   <nav id="menu" class="hidden flex justify-center bg-gray-100 px-6 py-4 gap-5 md:hidden">
-    <a href="#" class="py-2 md:py-0 hover:underline">Problema</a>
-    <a href="#" class="py-2 md:py-0 hover:underline">Solução</a>
-    <a href="#" class="py-2 md:py-0 hover:underline">Demonstração</a>
+    <a href="#" class="py-2 md:py-0 underline">Problema</a>
+    <a href="#" class="py-2 md:py-0 underline">Solução</a>
+    <a href="#" class="py-2 md:py-0 underline">Demonstração</a>
   </nav>
+  <!-- //// -->
+
+   <!-- Header Desktop -->
+  <header class="hidden p-6 justify-around items-center shadow-md md:flex">
+    <img src="./assets/Logo.png" alt="Logo" class="w-[174px] h-[72px]">
+    <nav class="flex justify-around px-6 py-4 gap-5 w-[500px]">
+        <a href="#" class="py-2 text-[24px] underline poppins">Problema</a>
+        <a href="#" class="py-2 text-[24px] underline poppins">Solução</a>
+        <a href="#" class="py-2 text-[24px] underline poppins">Demonstração</a>
+    </nav>
+  </header>
+
   <!-- //// -->
 
   <!-- Banner -->

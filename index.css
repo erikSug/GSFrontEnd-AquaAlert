@@ -1,6 +1,6 @@
 .poppins{
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 .logo{
@@ -14,7 +14,7 @@
 
 .underline{
     text-decoration: underline rgba(0,0,0,0.0);
-    transition: ease-in-out 300ms;
+    transition: ease-in-out 100ms;
 }
 .underline:hover{
     text-decoration: underline rgba(0,0,0,1);
