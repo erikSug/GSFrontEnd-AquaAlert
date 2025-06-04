@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu Burger</title>
+    <title>Aqua Alert</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
@@ -42,8 +42,8 @@
   <!-- //// -->
 
   <!-- Problemas (Utilização do Grid no modo Desktop e Flex no mobile) -->
-  <section id="problema-grid" class="p-2 md:h-[720px]">
-    <h2 class="text-[30px] oswald">Problemas encontrados</h2>
+  <section id="problema-grid" class="p-2 min-h-[700px]">
+    <h2 class="text-[48px] oswald">Problemas encontrados</h2>
     <!-- Card -->
     <div id="pcard1" class="w-[223px] h-[304px] px-[13px] py-[22px] m-[5px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
         <div class="w-[102px] h-[102px] bg-[#296FD8] rounded-[10px] p-2">
@@ -73,17 +73,24 @@
   <!-- //// -->
 
   <!-- Solução -->
-  <section class="h-[505px] bg-[#296FD8]">
-
+  <section class="min-h-[505px] bg-[#296FD8] flex flex-col justify-around items-center p-2 xl:flex-row">
+    <img src="./assets/solucao.png" alt="" class="sm:w-[616px] sm:h-[219px]">
+    <div>
+      <h2 class="oswald text-white text-[38px] sm:text-[48px]">A solução para o problema</h2>
+      <p class="max-w-[595px] text-[20px] text-white poppins">Enquanto enchentes devastam cidades em minutos, nossa resposta demora horas. O Aqua Alert quebra esse ciclo: sensores estrategicamente posicionados detectam aumentos perigosos
+        na vazão e disparam alertas automáticos em segundos. População e autoridades recebem notificações simultâneas via app e web, com dados visuais em tempo real que transformam 
+        prevenção em realidade.</p>
+    </div>
   </section>
 <!-- //// -->
 
 
 <!-- Demonstração -->
   <section class="h-[633px]">
-    
+
   </section>
 <!-- //// -->
+
   <footer>
     <div class="bg-[#296FD8] flex flex-col justify-center items-center p-[10px] h-[125px] md:flex-row md:gap-20 md:h-[72px]">
         <h2 class="text-white text-[24px] poppins">Siga nossas redes sociais</h2>
