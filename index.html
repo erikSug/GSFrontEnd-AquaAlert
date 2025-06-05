@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu Burger</title>
+    <title>Aqua Alert</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- Header Mobile -->
-  <header class="p-6 flex justify-between items-center shadow-md md:hidden">
+  <header class="bg-white p-6 flex justify-between items-center shadow-md md:hidden sticky top-0">
     <img src="./assets/Logo.png" alt="Logo" class="w-[124px] h-[52px]">
     <button id="menu-btn" class="text-3xl font-bold hover:text-[#296FD8] md:hidden">☰</button>
   </header>
-  <nav id="menu" class="hidden flex justify-center bg-gray-100 px-6 py-4 gap-5 md:hidden">
-    <a href="#" class="py-2 md:py-0 underline">Problema</a>
-    <a href="#" class="py-2 md:py-0 underline">Solução</a>
-    <a href="#" class="py-2 md:py-0 underline">Demonstração</a>
+  <nav id="menu" class="hidden flex justify-center bg-gray-100 px-6 py-4 gap-5 md:hidden sticky top-[100px]">
+    <a href="#problema-grid" class="py-2 md:py-0 underline">Problema</a>
+    <a href="#solucao-section" class="py-2 md:py-0 underline">Solução</a>
+    <a href="#demo-section" class="py-2 md:py-0 underline">Demonstração</a>
   </nav>
   <!-- //// -->
 
    <!-- Header Desktop -->
-  <header class="hidden p-6 justify-around items-center shadow-md md:flex">
+  <header class="bg-white hidden p-6 justify-around items-center shadow-md md:flex sticky top-0">
     <img src="./assets/Logo.png" alt="Logo" class="w-[174px] h-[72px]">
     <nav class="flex justify-around px-6 py-4 gap-5 w-[500px]">
-        <a href="#" class="py-2 text-[24px] underline poppins">Problema</a>
-        <a href="#" class="py-2 text-[24px] underline poppins">Solução</a>
-        <a href="#" class="py-2 text-[24px] underline poppins">Demonstração</a>
+        <a href="#problema-grid" class="py-2 text-[24px] underline poppins">Problema</a>
+        <a href="#solucao-section" class="py-2 text-[24px] underline poppins">Solução</a>
+        <a href="#demo-section" class="py-2 text-[24px] underline poppins">Demonstração</a>
     </nav>
   </header>
   <!-- //// -->
@@ -41,11 +41,11 @@
   </section>
   <!-- //// -->
 
-  <!-- Problemas (Grid no desktop | Flex no mobile) -->
-  <section class="h-[720px]">
-    <h2 class="text-[32px] oswald">Problemas encontrados</h2>
+  <!-- Problemas (Utilização do Grid no modo Desktop e Flex no mobile) -->
+  <section id="problema-grid" class="p-2 min-h-[700px]">
+    <h2 class="text-[48px] oswald">Problemas encontrados</h2>
     <!-- Card -->
-    <div class="w-[223px] h-[304px] px-[13px] py-[22px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
+    <div id="pcard1" class="w-[223px] h-[304px] px-[13px] py-[22px] m-[5px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
         <div class="w-[102px] h-[102px] bg-[#296FD8] rounded-[10px] p-2">
           <img src="./assets/flooding-house.svg" alt="">
         </div>
@@ -53,7 +53,7 @@
         <p class="text-[12px] w-[142px] h-[80px] poppins">As enchentes no Rio Grande do Sul expuseram a vulnerabilidade nacional diante de desastres climáticos."</p>
     </div>
 
-    <div class="w-[223px] h-[304px] px-[13px] py-[22px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
+    <div id="pcard2" class="w-[223px] h-[304px] px-[13px] py-[22px] m-[5px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
         <div class="w-[102px] h-[102px] bg-[#296FD8] rounded-[10px] p-2">
           <img src="./assets/wifi.svg" alt="">
         </div>
@@ -61,7 +61,7 @@
         <p class="text-[12px] w-[142px] h-[80px] poppins">Brasil carece de sistemas integrados que conectem previsão, alerta e evacuação em uma resposta coordenada.</p>
     </div>
 
-    <div class="w-[223px] h-[304px] px-[13px] py-[22px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
+    <div id="pcard3" class="pcard3 w-[223px] h-[304px] px-[13px] py-[22px] m-[5px] shadow-xl border-[3px] border-solid border-[#296FD8] flex flex-col gap-[10px] items-center">
         <div class="w-[102px] h-[102px] bg-[#296FD8] rounded-[10px] p-2">
           <img src="./assets/storm.svg" alt="">
         </div>
@@ -72,9 +72,43 @@
   </section>
   <!-- //// -->
 
+  <!-- Solução -->
+  <section id="solucao-section" class="min-h-[505px] bg-[#296FD8] flex flex-col justify-around items-center p-[32px] xl:flex-row">
+    <img src="./assets/solucao.png" alt="" class="sm:w-[616px] sm:h-[219px]">
+    <div>
+      <h2 class="oswald text-white text-[38px] sm:text-[48px]">A solução para o problema</h2>
+      <p class="max-w-[595px] text-[20px] text-white poppins">Enquanto enchentes devastam cidades em minutos, nossa resposta demora horas. O Aqua Alert quebra esse ciclo: sensores estrategicamente posicionados detectam aumentos perigosos
+        na vazão e disparam alertas automáticos em segundos. População e autoridades recebem notificações simultâneas via app e web, com dados visuais em tempo real que transformam 
+        prevenção em realidade.</p>
+    </div>
+  </section>
+<!-- //// -->
 
 
-
+<!-- Demonstração -->
+  <section id="demo-section" class="min-h-[633px] flex flex-col xl:flex-row justify-center items-center p-[32px]">
+    <div>
+      <h2 class="oswald text-[48px]">Mas como funciona na prática?</h2>
+      <p class="poppins text-[20px] max-w-[564px]">1. O Sensor vigia a água um pequeno aparelho fica instalado perto de rios e córregos, medindo o nível da água o tempo todo. <br>
+        2. Aviso Rápido Quando a água sobe demais:
+        O aparelho apita alto para avisar quem está por perto
+        Ao mesmo tempo, manda um alerta pelo celular <br>
+        3. Todo Mundo Fica Sabendo Um aplicativo no celular mostra um mapa da cidade com cores diferentes: <br>
+        🟢 - Tudo normal; <br>
+        🟡 - Atenção; <br>
+        🔴 - Perigo de enchente; <br>
+        Assim, você pode ver se sua rua ou bairro está em risco antes mesmo de sair de casa.</p>
+      <input type="range" min="1" max="100" value="1" class="slider" id="water-level">
+      <div>Nível da água: <span id="water-display"></span></div>
+    </div>
+    <div id="sp-map" class="w-[320px] h-[220px] md:w-[642px] md:h-[441px] flex justify-center items-center">
+        <div id="demo-cidade" class="w-[13px] h-[13px] md:w-[25px] md:h-[25px] rounded-[100px] border-2 border-black border-solid flex justify-center items-center">
+          <div id="ping" class="drop w-[13px] h-[13px] md:w-[25px] md:h-[25px] rounded-[100px] border-solid">   
+          </div>
+        </div>
+    </div>
+  </section>
+<!-- //// -->
 
   <footer>
     <div class="bg-[#296FD8] flex flex-col justify-center items-center p-[10px] h-[125px] md:flex-row md:gap-20 md:h-[72px]">
