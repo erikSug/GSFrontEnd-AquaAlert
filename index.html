@@ -10,24 +10,24 @@
 </head>
 <body>
     <!-- Header Mobile -->
-  <header class="p-6 flex justify-between items-center shadow-md md:hidden">
+  <header class="bg-white p-6 flex justify-between items-center shadow-md md:hidden sticky top-0">
     <img src="./assets/Logo.png" alt="Logo" class="w-[124px] h-[52px]">
     <button id="menu-btn" class="text-3xl font-bold hover:text-[#296FD8] md:hidden">☰</button>
   </header>
-  <nav id="menu" class="hidden flex justify-center bg-gray-100 px-6 py-4 gap-5 md:hidden">
-    <a href="#" class="py-2 md:py-0 underline">Problema</a>
-    <a href="#" class="py-2 md:py-0 underline">Solução</a>
-    <a href="#" class="py-2 md:py-0 underline">Demonstração</a>
+  <nav id="menu" class="hidden flex justify-center bg-gray-100 px-6 py-4 gap-5 md:hidden sticky top-[100px]">
+    <a href="#problema-grid" class="py-2 md:py-0 underline">Problema</a>
+    <a href="#solucao-section" class="py-2 md:py-0 underline">Solução</a>
+    <a href="#demo-section" class="py-2 md:py-0 underline">Demonstração</a>
   </nav>
   <!-- //// -->
 
    <!-- Header Desktop -->
-  <header class="hidden p-6 justify-around items-center shadow-md md:flex">
+  <header class="bg-white hidden p-6 justify-around items-center shadow-md md:flex sticky top-0">
     <img src="./assets/Logo.png" alt="Logo" class="w-[174px] h-[72px]">
     <nav class="flex justify-around px-6 py-4 gap-5 w-[500px]">
-        <a href="#" class="py-2 text-[24px] underline poppins">Problema</a>
-        <a href="#" class="py-2 text-[24px] underline poppins">Solução</a>
-        <a href="#" class="py-2 text-[24px] underline poppins">Demonstração</a>
+        <a href="#problema-grid" class="py-2 text-[24px] underline poppins">Problema</a>
+        <a href="#solucao-section" class="py-2 text-[24px] underline poppins">Solução</a>
+        <a href="#demo-section" class="py-2 text-[24px] underline poppins">Demonstração</a>
     </nav>
   </header>
   <!-- //// -->
@@ -73,7 +73,7 @@
   <!-- //// -->
 
   <!-- Solução -->
-  <section class="min-h-[505px] bg-[#296FD8] flex flex-col justify-around items-center p-2 xl:flex-row">
+  <section id="solucao-section" class="min-h-[505px] bg-[#296FD8] flex flex-col justify-around items-center p-2 xl:flex-row">
     <img src="./assets/solucao.png" alt="" class="sm:w-[616px] sm:h-[219px]">
     <div>
       <h2 class="oswald text-white text-[38px] sm:text-[48px]">A solução para o problema</h2>
@@ -86,7 +86,7 @@
 
 
 <!-- Demonstração -->
-  <section class="min-h-[633px] flex flex-col xl:flex-row justify-center items-center">
+  <section id="demo-section" class="min-h-[633px] flex flex-col xl:flex-row justify-center items-center">
     <div>
       <h2 class="oswald text-[48px]">Mas como funciona na prática?</h2>
       <p class="poppins text-[20px] max-w-[564px]">1. O Sensor vigia a água um pequeno aparelho fica instalado perto de rios e córregos, medindo o nível da água o tempo todo. <br>
