@@ -8,6 +8,6 @@ Este é um projeto landing page que tem como o objetivo apresentar uma solução
 https://eriksug.github.io/GSFrontEnd-AquaAlert/
 
 ## Integrantes
-- Erik Kaiyu Suguiyama
-- Guilherme Vital
-- Lucas Guerreiro
+- Erik Kaiyu Suguiyama - 559273 
+- Guilherme Vital - 560073
+- Lucas Guerreiro - 560359
