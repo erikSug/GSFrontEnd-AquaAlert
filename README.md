@@ -10,4 +10,4 @@ https://eriksug.github.io/GSFrontEnd-AquaAlert/
 ## Integrantes
 - Erik Kaiyu Suguiyama - 559273 
 - Guilherme Vital - 560073
-- Lucas Guerreiro - 560359
+- Lucas Guerreiro Fernandes - 560359
