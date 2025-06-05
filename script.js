@@ -4,7 +4,7 @@ let cidade = document.getElementById('demo-cidade');
 let slider = document.getElementById('water-level');
 let alertAnimation = document.getElementById('ping');
 let waterLevel = 0;
-
+let waterDisplay = document.getElementById('water-display')
 
 btn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
@@ -34,5 +34,6 @@ function checkLevel(){
 
 slider.oninput = function (){
     waterLevel = this.value;
+    waterDisplay.innerHTML = `${this.value}%`
 }
-setInterval(checkLevel, 1000);
+setInterval(checkLevel, 2000);

@@ -86,23 +86,24 @@
 
 
 <!-- Demonstração -->
-  <section class="h-[633px]">
+  <section class="min-h-[633px] flex flex-col xl:flex-row justify-center items-center">
     <div>
-      <h2>Mas como funciona na prática?</h2>
-      <p>1. O Sensor vigia a água um pequeno aparelho fica instalado perto de rios e córregos, medindo o nível da água o tempo todo.
+      <h2 class="oswald text-[48px]">Mas como funciona na prática?</h2>
+      <p class="poppins text-[20px] max-w-[564px]">1. O Sensor vigia a água um pequeno aparelho fica instalado perto de rios e córregos, medindo o nível da água o tempo todo. <br>
         2. Aviso Rápido Quando a água sobe demais:
         O aparelho apita alto para avisar quem está por perto
-        Ao mesmo tempo, manda um alerta pelo celular
-        3. Todo Mundo Fica Sabendo Um aplicativo no celular mostra um mapa da cidade com cores diferentes:
-        🟢 - Tudo normal;
-        🟡 - Atenção;
-        🔴 - Perigo de enchente;
+        Ao mesmo tempo, manda um alerta pelo celular <br>
+        3. Todo Mundo Fica Sabendo Um aplicativo no celular mostra um mapa da cidade com cores diferentes: <br>
+        🟢 - Tudo normal; <br>
+        🟡 - Atenção; <br>
+        🔴 - Perigo de enchente; <br>
         Assim, você pode ver se sua rua ou bairro está em risco antes mesmo de sair de casa.</p>
       <input type="range" min="1" max="100" value="1" class="slider" id="water-level">
+      <div>Nível da água: <span id="water-display"></span></div>
     </div>
-    <div id="sp-map" class="w-[320px] h-[220px] md:w-[642px] md:h-[441px]">
-        <div id="demo-cidade" class="w-[25px] h-[25px] rounded-[100px] border-2 border-black border-solid">
-          <div id="ping" class="drop w-[25px] h-[25px] rounded-[100px] border-solid">   
+    <div id="sp-map" class="w-[320px] h-[220px] md:w-[642px] md:h-[441px] flex justify-center items-center">
+        <div id="demo-cidade" class="w-[13px] h-[13px] md:w-[25px] md:h-[25px] rounded-[100px] border-2 border-black border-solid flex justify-center items-center">
+          <div id="ping" class="drop w-[13px] h-[13px] md:w-[25px] md:h-[25px] rounded-[100px] border-solid">   
           </div>
         </div>
     </div>
