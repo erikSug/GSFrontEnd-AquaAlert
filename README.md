@@ -4,6 +4,9 @@ Este é um projeto landing page que tem como o objetivo apresentar uma solução
 - HTML
 - CSS (Tailwind e CSS Grid)
 - Javascript
+## Link do Site
+https://eriksug.github.io/GSFrontEnd-AquaAlert/
+
 ## Integrantes
 - Erik Kaiyu Suguiyama
 - Guilherme Vital
