@@ -69,6 +69,22 @@
     background-color: #1CFF46;
 }
 
+.drop {
+    background-color: #1CFF46;
+    animation: drop-ping 1.5s ease-out infinite;
+}
+
+@keyframes drop-ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
 .slider {
   width: 100%;
   max-width: 300px;
