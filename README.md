@@ -6,7 +6,8 @@ Este é um projeto landing page que tem como o objetivo apresentar uma solução
 - Javascript
 ## Link do Site
 https://eriksug.github.io/GSFrontEnd-AquaAlert/
-
+## Link do Repositório
+https://github.com/erikSug/GSFrontEnd-AquaAlert
 ## Integrantes
 - Erik Kaiyu Suguiyama - 559273 
 - Guilherme Vital - 560073
